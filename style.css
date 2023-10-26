@@ -1,0 +1,129 @@
+:root {
+--softblue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+
+--verydark-blue-m-BG: hsl(217, 54%, 11%);
+--verydark-blue-c-BG: hsl(216, 50%, 16%);
+--verydark-blue-line: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
+
+}
+/*
+- Font size (paragraph): 18px*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+body {
+    
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--verydark-blue-m-BG);
+    
+}
+img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+.header
+img{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height: 100%;
+    
+}
+.header:hover img {
+    transform: scale(1.1);
+}
+.container {
+    background-color: var(--verydark-blue-c-BG);
+    box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    border-radius: 12px;
+}
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+  .header {
+    position: relative;
+    cursor: pointer;
+  }
+
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .title {
+    font-size: 1.2rem;
+    color: var(--white);
+    cursor: pointer;
+  }
+  .title:hover {
+    color: var(--cyan);
+  }
+  .content {
+    color: var(--softblue);
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .icons div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .eth {
+    color: var(--cyan);
+  }
+  .time {
+    color: var(--softblue);
+  }
+  .divider {
+    width: 100%;
+    height: 2px;
+    background-color: var(--verydark-blue-c-BG);
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .footer img {
+    width: 40px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+  }
+  .footer p {
+    color: var(--softblue);
+  }
+  .footer b {
+    color: var(--white);
+    cursor: pointer;
+  }
+  .footer b:hover {
+    color: var(--cyanyan);
+  }
+
+
+  .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: 12px;
+}
+  .attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
